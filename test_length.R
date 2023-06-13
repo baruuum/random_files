@@ -1,6 +1,6 @@
 #!/usr/bin/env RScript
 
-threshold = commandArgs(trailingOnly = TRUE)[[1]]
+threshold = as.integer(commandArgs(trailingOnly = TRUE)[[1]])
 
 # required libraries
 stopifnot(
