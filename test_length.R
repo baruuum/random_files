@@ -70,6 +70,6 @@ res = sapply(seq_len(n_comments), function(v) {
     t()|> 
     as.data.frame()
 
-write(jsonlite::toJSON(res, dataframe = "rows"), "LengthTest.json")
+write(jsonlite::toJSON(res, dataframe = "rows", pretty = TRUE), "LengthTest.json")
 
 ### END OF CODE ###
