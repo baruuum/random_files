@@ -62,8 +62,8 @@ sp = 5
 res = sapply(seq_len(n_comments), function(v) {
     c(
         comment_id = as.character(sample.int(1e5, 1)),
-        message = lipsum(np, sp, threshold),
-        context_message = lipsum(np, sp, threshold),
+        commenter_b = lipsum(np, sp, threshold),
+        commenter_a = lipsum(np, sp, threshold),
         post_message = lipsum(np, sp, threshold)
     )
 }) |> 
