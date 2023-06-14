@@ -33,6 +33,8 @@ truncate_text = function (txt_vec, thres, replace = "...")
 ## Check text
 ## ------------------------------------------------------------------
 
+set.seed(42)
+
 # get data
 rawdat = setDT(jsonlite::fromJSON("LengthTest.json.bck"))
 
@@ -50,7 +52,7 @@ sample = dat[
     nw_total > 100, ..sel_cols
 ][
     # sample 5
-    sample.int(.N, 5L, FALSE), 
+    sample.int(.N, 5L, FALSE),
 ]
 
 # write
